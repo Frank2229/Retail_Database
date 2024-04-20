@@ -1,0 +1,11 @@
+CREATE SCHEMA retail;
+USE retail;
+CREATE TABLE inventory (
+	ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Product_Name VARCHAR(50) NOT NULL,
+    UPC VARCHAR(30) NOT NULL,
+    On_Hand DOUBLE NOT NULL,
+    Cost DOUBLE NOT NULL,
+    Retail DOUBLE NOT NULL,
+    Tax DOUBLE
+);
